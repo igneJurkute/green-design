@@ -1,0 +1,37 @@
+.header{
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 654px;
+    margin-top: 35px;
+    margin-bottom: 40px;
+}
+.logo-descr{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+.logo-name{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 125%;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+}
+.link{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 125%;
+    color: white;
+    text-decoration: none;
+}
+.link:hover{
+    text-decoration: underline;
+}
