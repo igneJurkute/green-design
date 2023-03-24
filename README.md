@@ -14,7 +14,7 @@ _website design project_
 
 This project is for educational porpuses only. Pull request are welcome, but priority for project authors! Thank you for your cooperation!
 
-Site published at: https://ignejurkute.github.io/astronautas/
+Site published at: https://ignejurkute.github.io/green-design/
 
 Design: [Green-design](https://www.figma.com/file/V1JPQMZa66Mk53vnN5tvaM/FE-(3-week-practice)?node-id=1-17&t=Dk9GzLPGqvSAzQKF-0)
 
@@ -47,7 +47,7 @@ Would like to run this project locally? Open terminal and follow these steps:
 
 1. Clone the repo
     ```sh
-    git clone https://github.com/igneJurkute/astronautas.git
+    git clone https://github.com/igneJurkute/green-design.git
     ```
 2. Install NPM packages
     ```sh
