@@ -2,6 +2,155 @@
 @import '../base/layout.css';
 @import '../components/header.css';
 
-.sites{
+.hero-topics{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 25px;
+    width: 416px;
+}
+.hero-topics > .topic1{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.hero-topics > .topic2{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+    font-family: 'Crimson Text', sans-serif;
+}
+.hero-topics > .text{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 125%;
+}
+.hero-topics > .hero-button{
+    border: 1px solid white;
     background-color: white;
+    padding: 10px 48px 10px 48px;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 125%;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+.hero .pic-friends{
+    width: 644.28px;
+    height: 378.13px;
+}
+.partners-logo-section{
+    background-color: white;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.partners-logo-section > .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 55px;
+    margin-top: 60px;
+}
+.content > .section1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    width: 411px;
+}
+.section1 > .name1{
+    color: #74C69D;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 125%;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.section1 > .name2{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+    font-family: 'Crimson Text', sans-serif;
+    text-align: center;
+}
+.section1 > .name3{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 125%;
+    text-align: center;
+}
+.partners-logo-section .sites{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 68px;
+    max-width: 1158.98px;
+}
+.sites > .google{
+    width: 152.64px;
+    height: 50px;
+}
+.sites > .microsoft{
+    width: 210.85px;
+    height: 45px;
+}
+.sites > .airbnb{
+    width: 160.29px;
+    height: 50px;
+}
+.sites > .facebook{
+    width: 196.38px;
+    height: 38px;
+}
+.sites > .spotify{
+    width: 166.82px;
+    height: 50px;
+}
+.partners-logo-section .button{
+    width: 170px;
+    height: 48px;
+    background-color:#212529;
+    border-radius: 5px;
+}
+.learn-more{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 125%;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+@media (max-width: 1120px){
+    .partners-logo-section .sites{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width: 375px){
+    .hero-topics, .content > .section1{
+        width: 335px;
+    }.hero .pic-friends{
+        width: 335px;
+        height: 196.61px;
+    }
+    .hero-topics > .topic2{
+        font-size: 28px;
+    }
+    .section1 > .name2{
+        font-size: 24px;
+    }
 }
