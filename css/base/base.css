@@ -13,6 +13,10 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
+header, main, footer{
+    width: 100%;
+}
+
 .green-bg {
     background-color: #74C69D; 
     color:white; 
