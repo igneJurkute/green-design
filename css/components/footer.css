@@ -1,0 +1,26 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1178px;
+    margin-top: 51px;
+    margin-bottom: 49px;
+}
+.footer-socials{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+}
+.footer-socials > .social{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.footer > .copyright{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 125%;
+    text-align: right;
+}

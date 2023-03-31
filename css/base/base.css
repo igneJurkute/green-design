@@ -8,15 +8,15 @@ body * {
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: 'Work Sans', sans-serif;
 }
-
 header, main, footer{
     width: 100%;
 }
-
+header, section, footer{
+    padding: 0 20px; 
+}
 .green-bg {
     background-color: #74C69D; 
     color:white; 

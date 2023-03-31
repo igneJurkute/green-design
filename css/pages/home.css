@@ -3,6 +3,7 @@
 @import '../components/header.css';
 @import '../components/button.css';
 @import '../3rd-party/font-awesome.min.css';
+@import '../components/footer.css';
 
 .hero-topics{
     display: flex;
@@ -177,6 +178,7 @@
     padding: 0px;
     gap: 45px;
     max-width: 1176px;
+    margin-bottom: 54px;
 }
 .talents-block > .talents-content{
     display: flex;
