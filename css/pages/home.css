@@ -1,6 +1,8 @@
 @import '../base/base.css';
 @import '../base/layout.css';
 @import '../components/header.css';
+@import '../components/button.css';
+@import '../3rd-party/font-awesome.min.css';
 
 .hero-topics{
     display: flex;
@@ -41,8 +43,10 @@
     text-decoration: none;
 }
 .hero .pic-friends{
-    width: 644.28px;
-    height: 378.13px;
+    max-width: 644.28px;
+}
+.pic-friends > .friends{
+    width: 100%;
 }
 .partners-logo-section{
     background-color: white;
@@ -99,53 +103,145 @@
     max-width: 1158.98px;
 }
 .sites > .google{
-    width: 152.64px;
-    height: 50px;
+    max-width: 152.64px;
 }
 .sites > .microsoft{
-    width: 210.85px;
-    height: 45px;
+    max-width: 210.85px;
 }
 .sites > .airbnb{
-    width: 160.29px;
-    height: 50px;
+    max-width: 160.29px;
 }
 .sites > .facebook{
-    width: 196.38px;
-    height: 38px;
+    max-width: 196.38px;
 }
 .sites > .spotify{
-    width: 166.82px;
-    height: 50px;
+    max-width: 166.82px;
 }
-.partners-logo-section .button{
-    width: 170px;
-    height: 48px;
-    background-color:#212529;
-    border-radius: 5px;
+.sites .pic{
+    width: 100%;
 }
-.learn-more{
+.meeting-section,
+.creative-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.meeting-section > .meeting-block,
+.creative-section > .creative-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1180px;
+    margin-top: 43px;
+    gap: 110px;
+}
+.meeting-block > .pic-peole,
+.creative-block > .pic-person{
+    max-width: 600px;
+}
+.pic-peole > .people,
+.pic-person > .person{
+    width: 100%;
+}
+.meeting-content,
+.creative-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    max-width: 470px;
+}
+.meeting-content > .topic,
+.creative-content > .topic{
+    font-family: 'Crimson Text', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+    color: #212529;
+}
+.meeting-content > .text,
+.creative-content > .text{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 125%;
+    color: rgba(33, 37, 41, 0.5);
+}
+.talents-block{
+    margin-top: 108px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 45px;
+    max-width: 1176px;
+}
+.talents-block > .talents-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    max-width: 404px;
+}
+.talents-content > .topic1{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 125%;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #74C69D;
+}
+.talents-content > .topic2{
+    font-family: 'Crimson Text', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+    text-align: center;
+    color: #212529;
+}
+.talents-content > .text{
     font-weight: 400;
     font-size: 20px;
     line-height: 125%;
     text-align: center;
-    color: white;
-    text-decoration: none;
 }
-@media (max-width: 1120px){
-    .partners-logo-section .sites{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+.talents-section .portraits{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 47px;
+}
+.portraits > .portrait01{
+    max-width: 279px;
+}
+.portraits > .portrait{
+    max-width: 252px;
+}
+.portraits .img{
+    width: 100%;
+}
+
+@media (max-width: 700px){
+    .partners-logo-section .sites,
+    .meeting-section > .meeting-block,
+    .creative-section > .creative-block,
+    .talents-section .portraits{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 }
 @media (max-width: 375px){
     .hero-topics, .content > .section1{
-        width: 335px;
+        max-width: 335px;
     }.hero .pic-friends{
-        width: 335px;
-        height: 196.61px;
+        max-width: 335px;
     }
     .hero-topics > .topic2{
         font-size: 28px;
