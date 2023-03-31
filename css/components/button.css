@@ -1,0 +1,17 @@
+.btn{
+    width: 170px;
+    height: 48px;
+    border-radius: 5px;
+    background-color:#212529; 
+}
+.btn > .btn-text{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 125%;
+    text-align: center;
+}
+.btn > .btn-text:hover{
+    text-decoration: underline;
+}
