@@ -5,6 +5,14 @@
 @import '../3rd-party/font-awesome.min.css';
 @import '../components/footer.css';
 
+.hero-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+    padding-bottom: 83px;
+    max-width: 1180.28px;
+}
 .hero-topics{
     display: flex;
     flex-direction: column;
@@ -30,18 +38,6 @@
     font-weight: 400;
     font-size: 15px;
     line-height: 125%;
-}
-.hero-topics > .hero-button{
-    border: 1px solid white;
-    background-color: white;
-    padding: 10px 48px 10px 48px;
-    border-radius: 5px;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 125%;
-    text-align: center;
-    color: black;
-    text-decoration: none;
 }
 .hero .pic-friends{
     max-width: 644.28px;
@@ -230,25 +226,34 @@
 }
 
 @media (max-width: 700px){
+    .partners-logo-section > .content > .section1{
+        width: 100%;
+    }
     .partners-logo-section .sites,
     .meeting-section > .meeting-block,
-    .creative-section > .creative-block,
     .talents-section .portraits{
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      align-items: center;
+    }
+    .creative-section > .creative-block,
+    .hero-cont{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: center; 
+        width: 100%;
     }
 }
 @media (max-width: 375px){
-    .hero-topics, .content > .section1{
-        max-width: 335px;
-    }.hero .pic-friends{
-        max-width: 335px;
-    }
     .hero-topics > .topic2{
         font-size: 28px;
     }
-    .section1 > .name2{
+    .section1 > .name2,
+    .meeting-content > .topic,
+    .creative-content > .topic,
+    .talents-content > .topic2{
         font-size: 24px;
     }
 }

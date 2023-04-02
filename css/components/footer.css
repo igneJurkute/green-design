@@ -24,3 +24,13 @@
     line-height: 125%;
     text-align: right;
 }
+@media (max-width: 700px){
+    .footer{
+        display: flex;
+       flex-direction: column;
+       gap: 20px;
+    }
+    .footer > .copyright{
+        text-align: center;
+    }
+}

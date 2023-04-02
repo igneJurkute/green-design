@@ -1,13 +1,22 @@
-
-.logo-descr{
+.header{
+    width: 1175px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    margin-top: 35px;
+    margin-bottom: 40px;
+}
+.header > .logo-descr{
     display: inline-flex;
     gap: 18px;
 }
-.logo{
+.logo-descr > .logo{
     width: 70px;
     height: 48.31px;
 }
-.logo-name{
+.logo-descr > .logo-name{
     font-style: normal;
     font-weight: 500;
     font-size: 40px;
@@ -19,7 +28,7 @@
     padding: 0px;
     gap: 30px;
 }
-.link{
+.nav > .link{
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -27,17 +36,22 @@
     color: white;
     text-decoration: none;
 }
-.link:hover{
+.nav > .link:hover{
     text-decoration: underline;
 }
 .hamburger {
     display: none;
     transition: transform 1s;
 }
-.hamburger *{
-    font-size: 60px;
+.fa.fa-bars{
     color:white;
     text-decoration: none;
+    font-size: 30px;
+    transition: 1s;
+}
+.fa.fa-bars:hover{
+    color:aquamarine;
+    font-size: 35px;
 }
 @media (max-width: 700px){
     .nav{
@@ -48,10 +62,10 @@
     }
 }
 @media (max-width: 375px){
-    .logo{
+    .logo-descr > .logo{
         width: 45px;
         height: 31.06px;
     }
-    .logo-name{
+    .logo-descr > .logo-name{
         font-size: 30px;}
 }
